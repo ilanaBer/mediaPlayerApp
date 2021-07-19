@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/round_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/explain_iv"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/alarticon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="30dp"
+            android:text="would you like to delete this song?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <Button
+            android:layout_gravity="center"
+            android:background="@drawable/cancle_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/exit_btn"
+            android:textStyle="bold"
+            android:text="cancel"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_below="@+id/continue_btn"/>
+
+
+            <Button
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ok_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/continue_btn"
+                android:textStyle="bold"
+                android:text="confirm"
+                android:layout_marginLeft="40dp"
+                android:textColor="@color/white"
+                android:padding="10dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

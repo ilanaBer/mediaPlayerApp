@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/abstractmusicrockbw">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/recycler" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/prev_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="6dp"
+                android:background="@null"
+                app:pressedTranslationZ="12dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/previous"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/play_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="6dp"
+                android:background="@null"
+                app:pressedTranslationZ="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/prev_btn"
+                android:src="@drawable/playbutton"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/pause_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="6dp"
+                android:background="@null"
+                app:pressedTranslationZ="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/play_btn"
+                android:src="@drawable/pause"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/next_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="6dp"
+                android:background="@null"
+                app:pressedTranslationZ="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/pause_btn"
+                android:src="@drawable/next"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/add_btn"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:elevation="6dp"
+                android:background="@null"
+                app:pressedTranslationZ="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@id/next_btn"
+                android:src="@drawable/plus"/>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
